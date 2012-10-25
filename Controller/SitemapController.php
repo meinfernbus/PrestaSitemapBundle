@@ -38,7 +38,7 @@ class SitemapController extends Controller
             throw $this->createNotFoundException();
         }
 
-        $response = Response::create($sitemapindex->toXml());
+        $response = new Response($sitemapindex->toXml());
         $response->setPublic();
         $response->setClientTtl($this->getTtl());
 
@@ -59,7 +59,7 @@ class SitemapController extends Controller
             throw $this->createNotFoundException();
         }
 
-        $response = Response::create($section->toXml());
+        $response = new Response($section->toXml());
         $response->setPublic();
         $response->setClientTtl($this->getTtl());
 

@@ -14,7 +14,7 @@ use Doctrine\Common\Cache\Cache;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Sitemap;
 use Symfony\Bundle\FrameworkBundle\Routing\Router;
-use Symfony\Component\EventDispatcher\ContainerAwareEventDispatcher;
+use Symfony\Bundle\FrameworkBundle\Debug\TraceableEventDispatcher as ContainerAwareEventDispatcher;
 
 /**
  * Sitemap Manager service
